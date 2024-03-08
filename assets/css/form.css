@@ -1,0 +1,194 @@
+:root{
+    --nightlight: #55638a;
+    --nightmedium: #283352;
+    --nightdark:#001b44;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 12px;
+    min-height: 100vh;
+}
+
+header {
+    height: 85px; 
+    display: flex;
+    justify-content: right;
+}
+
+header span{
+    font-size: 1.2em;
+    padding: 24px;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.divLeft {
+    height: 800px;
+    width: 50%;
+    float: left;   
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;   
+}
+
+#gradient-icon {
+    width: 60%;
+    height: 60%;
+    font-size: 2em; 
+    border-radius: 10000px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.divRight{
+    width: 50%;
+    height: 800px;
+}
+
+.form{
+    margin-top: 150px;
+    padding: 20px;
+    line-height: 2.5;
+}
+
+.form h2 {
+    text-align: center;
+    font-size: 1.75em;
+}
+
+label{
+    display: block;
+    
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+
+}
+
+input {
+    border-radius: 3px;
+    border-width: 1px;
+    height: 2.5em;
+    font-size: 1.1em; 
+    line-height: 1.2em;
+    padding: 5px; 
+}
+
+textarea {
+    font-family: sans-serif;
+    border-radius: 3px;
+    border-width: 1px;
+    font-size: 1.1em;
+    height: 7.5em;
+    line-height: 1.2em;
+    padding: 5px;
+}
+
+button {   
+    margin-top: 20px;
+    border-radius: 5px;
+    height: 2.5em;
+    font-size: 1.1em;
+    width: 100%;
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+
+
+}
+
+
+/*LIGHT MODE*/
+.light {
+    background-color: ghostwhite;
+    min-height: 100vh;
+}
+
+.light header{
+    border-bottom: 15px double black;
+}
+
+.light #gradient-icon{
+    color: white;
+    background-image: linear-gradient(gold,chocolate);
+}
+
+.light .divLeft{
+    border-right: 15px double black;
+}
+
+.light button {
+    color: white;
+    background-color: black;
+}
+
+.light footer {
+    border-top: 4px solid black;
+}
+
+/*DARK MODE*/
+.dark{
+    background-color: var(--nightdark);
+    min-height: 100vh;
+}
+
+.dark header{
+    border-bottom: 15px double var(--nightlight);
+}
+
+.dark #gradient-icon{
+    color:black;
+    background-image: linear-gradient(midnightblue, violet);
+}
+
+.dark .divLeft{
+    border-right: 15px double var(--nightlight);
+}
+
+.dark .divRight {
+    color: white;
+}
+
+.dark input {
+    background-color: var(--nightmedium);
+    border: 2px solid var(--nightlight);
+    color: #b2bcd9;
+}
+
+.dark textarea {
+    background-color: var(--nightmedium);
+    border: 2px solid var(--nightlight);
+    color: #b2bcd9;
+}
+
+.dark button {
+    color: white;
+    background-color: var(--nightlight);
+    border: 2px solid var(--nightlight);
+}
+
+.dark footer {
+    border-top: 4px solid var(--nightlight);
+}
+
+
+header span:hover{
+    cursor: pointer;
+}
