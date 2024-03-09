@@ -1,7 +1,9 @@
+
 :root {
-    --nightlight: #55638a;
-    --nightmedium: #283352;
-    --nightdark: #001b44;
+    --nightlight: #515154;
+    --nightmedium: #2b2b2e;
+    --nightdark: #121212;
+    --nightwhite: #c5c5c6;
 }
 
 * {
@@ -17,14 +19,14 @@ body {
 }
 
 header {
-    height: 85px;
+    height: 100px;
     display: flex;
     justify-content: right;
 }
 
 header span {
     font-size: 1.2em;
-    padding: 24px;
+    margin: 25px;
 }
 
 main {
@@ -155,6 +157,10 @@ footer {
     background-color: black;
 }
 
+.light button:hover{
+    background-color:var(--nightmedium);
+}
+
 .light footer {
     border-top: 4px solid black;
     background-color: ghostwhite;
@@ -167,7 +173,7 @@ footer {
 }
 
 .dark header {
-    border-bottom: 15px double var(--nightlight);
+    border-bottom: 15px double var(--nightmedium);
 }
 
 .dark #gradient-icon {
@@ -176,7 +182,7 @@ footer {
 }
 
 .dark .divLeft {
-    border-color: var(--nightlight);
+    border-color: var(--nightmedium);
 }
 
 .dark #gradient-icon a {
@@ -188,29 +194,34 @@ footer {
 }
 
 .dark .divRight {
-    color: white;
+    color: var(--nightwhite);
 }
 
 .dark input {
     background-color: var(--nightmedium);
-    border: 2px solid var(--nightlight);
+    border: 1.5px solid var(--nightlight);
     color: #b2bcd9;
 }
 
 .dark textarea {
     background-color: var(--nightmedium);
-    border: 2px solid var(--nightlight);
+    border: 1.5px solid var(--nightlight);
     color: #b2bcd9;
 }
 
 .dark button {
-    color: white;
-    background-color: var(--nightlight);
-    border: 2px solid var(--nightlight);
+    color: var(--nightwhite);
+    background-color: #55638a;
+    border: 1.5px solid #55638a;
+}
+
+.dark button:hover{
+    background-color:#656d8c;
 }
 
 .dark footer {
-    border-top: 4px solid var(--nightlight);
+    border-top: 4px solid var(--nightmedium);
+    background-color: var(--nightdark);
 }
 
 /*RESPONSIVE DESIGN*/

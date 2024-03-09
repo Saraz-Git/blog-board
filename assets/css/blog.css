@@ -1,7 +1,8 @@
 :root{
-    --nightlight: #55638a;
-    --nightmedium: #283352;
-    --nightdark:#001b44;
+    --nightlight: #515154;
+    --nightmedium: #2b2b2e;
+    --nightdark: #121212;
+    --nightwhite: #c5c5c6;
 }
 
 * {
@@ -13,24 +14,24 @@ body {
     font-family: sans-serif;
     font-size: 12px;
     min-height: 100vh;
-    position: relative;
+    
 }
 
 header {
-    height: 85px;
+    height: 100px;
     display: flex;
     justify-content: right;
 }
 
 header h2 {
-    font-size: 1.75em;
+    font-size: 2em;
     text-align: left;
     width: 90%; 
     margin: 25px;
 }
 
 header button {
-    margin-top: 20px;
+    margin-top: 25px;
     border-radius: 3px;
     height: 2.5em;
     font-size: 1.1em;
@@ -39,17 +40,17 @@ header button {
 
 header span{
     font-size: 1.2em;
-    padding: 24px;
+    margin: 25px;
 }
 
 main{
     width: 100%;
-    
+    padding-bottom: 100px;
 }
 
 main article{
  border-radius: 5px; 
- margin: 10px;  
+ margin: 20px;  
  padding: 10px;
  border: 2px solid;
  line-height: 1.5em;
@@ -58,6 +59,7 @@ main article{
 main article h3{
     display: block;
     border-bottom: 1px solid;
+    
 }
 
 main article p {
@@ -75,12 +77,13 @@ main article h4 {
 footer {
     height: 100px;
     width: 100%;
-    position: absolute;
-    bottom: 0;
+   position: fixed; 
+   bottom: 0;
     z-index: 3;
 }
 
 footer p {
+    margin-top: 5px;
     font-size: 1em;
     text-align: center;
 }
@@ -129,6 +132,7 @@ footer ul li a span{
 
 .light footer {
     border-top: 4px solid black;
+    background-color: ghostwhite;
 }
 
 .light footer ul li a{
@@ -142,7 +146,7 @@ footer ul li a span{
 }
 
 .dark header{
-    border-bottom: 15px double var(--nightlight);
+    border-bottom: 15px double var(--nightmedium);
 }
 
 .dark header h2{
@@ -150,27 +154,32 @@ footer ul li a span{
 }
 
 .dark header button {
-    color: white;
+    color: var(--nightwhite);
     background-color: var(--nightlight);
-    border: 2px solid var(--nightlight);
+    border: 2px solid var(--nightmedium);
 }
 .dark header button a {
-    color: white;
+    color: var(--nightwhite);
     text-decoration: none;
 }
 
 .dark main article {
     border-color: var(--nightlight);
-    color: var(--nightlight);
+    color: var(--nightwhite);
+}
+
+.dark main article h3 {
+    border-color: var(--nightlight);
 }
 
 .dark footer {
-    border-top: 4px solid var(--nightlight);
-    color: white;
+    background-color: var(--nightdark);
+    border-top: 4px solid var(--nightmedium);
+    color: var(--nightwhite);
 }
 
 .dark footer ul li a{
-    color: white;
+    color: var(--nightwhite);
 }
 
 

@@ -17,6 +17,7 @@ let blogs =[];
 submitBtn.addEventListener('click',function(event){
     event.preventDefault();
     if(nameInput.value===''||titleInput.value===''||content.value.trim()===''){
+        window.alert('Please complete the form');
         return;
     }else{
         let blog ={
