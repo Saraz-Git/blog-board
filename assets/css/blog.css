@@ -47,6 +47,31 @@ main{
     
 }
 
+main article{
+ border-radius: 5px; 
+ margin: 10px;  
+ padding: 10px;
+ border: 2px solid;
+ line-height: 1.5em;
+}
+
+main article h3{
+    display: block;
+    border-bottom: 1px solid;
+}
+
+main article p {
+   font-style: italic;
+   display: block;
+   min-height: 5em;
+   margin: 5px;
+}
+
+main article h4 {
+    display: block;
+    font-weight: 400;
+}
+
 footer {
     height: 100px;
     width: 100%;
@@ -94,6 +119,14 @@ footer ul li a span{
     text-decoration: none;
 }
 
+.light main article {
+    border-color: black;
+    color: black;
+}
+
+
+
+
 .light footer {
     border-top: 4px solid black;
 }
@@ -124,6 +157,11 @@ footer ul li a span{
 .dark header button a {
     color: white;
     text-decoration: none;
+}
+
+.dark main article {
+    border-color: var(--nightlight);
+    color: var(--nightlight);
 }
 
 .dark footer {

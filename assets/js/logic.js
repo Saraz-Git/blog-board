@@ -29,7 +29,6 @@ function renderLastMode(){
   if(initialMode !== null){
     container.setAttribute('class',initialMode);
   };
-
 };
 renderLastMode();
 
