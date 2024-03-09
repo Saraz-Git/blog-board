@@ -7,13 +7,13 @@
 * {
     box-sizing: border-box;
     margin: 0px;
-    font-family: sans-serif;
+    
 }
 
-body .container {
+body {
     font-size: 12px;
     min-height: 100vh;  
-    
+    font-family: sans-serif;    
 }
 
 header {
@@ -34,16 +34,13 @@ main {
     min-height: 800px;
 }
 
-.divLeft {
-   
+.divLeft {   
     width: 50%;
     float: left;
-    display: flex;
-   
-    justify-content: center;
-   
+    display: flex;   
+    justify-content: center;  
     border-right: 15px double;
-    transition: all 1s ease-in-out;
+    transition: width 1s ease-in-out;
 }
 
 #gradient-icon {
