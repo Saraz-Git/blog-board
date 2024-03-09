@@ -1,64 +1,76 @@
-:root{
+:root {
     --nightlight: #55638a;
     --nightmedium: #283352;
-    --nightdark:#001b44;
+    --nightdark: #001b44;
 }
 
 * {
     box-sizing: border-box;
     margin: 0px;
+    font-family: sans-serif;
 }
 
-body {
-    font-family: sans-serif;
+body .container {
     font-size: 12px;
-    min-height: 100vh;
+    min-height: 100vh;  
+    
 }
 
 header {
-    height: 85px; 
+    height: 85px;
     display: flex;
     justify-content: right;
 }
 
-header span{
+header span {
     font-size: 1.2em;
     padding: 24px;
 }
 
-main{
+main {
     width: 100%;
     display: flex;
     flex-direction: row;
+    min-height: 800px;
 }
 
 .divLeft {
-    height: 800px;
+   
     width: 50%;
-    float: left;   
+    float: left;
     display: flex;
-    align-content: center;
+   
     justify-content: center;
-    align-items: center;   
+   
+    border-right: 15px double;
+    transition: all 1s ease-in-out;
 }
 
 #gradient-icon {
-    width: 60%;
-    height: 60%;
-    font-size: 2em; 
-    border-radius: 10000px;
+    width: 27vw;
+    height: 27vw;
+    border-radius: 50%;
+    margin-top: 150px;
     display: flex;
     align-content: center;
     justify-content: center;
     align-items: center;
 }
 
-.divRight{
-    width: 50%;
-    height: 800px;
+#gradient-icon a {
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    font-size: 4em;
 }
 
-.form{
+.divRight {
+ 
+    width: 50%;
+    
+}
+
+.form {
     margin-top: 150px;
     padding: 20px;
     line-height: 2.5;
@@ -69,24 +81,22 @@ main{
     font-size: 1.75em;
 }
 
-label{
+label {
     display: block;
-    
 }
 
 .input-group {
     display: flex;
     flex-direction: column;
-
 }
 
 input {
     border-radius: 3px;
     border-width: 1px;
     height: 2.5em;
-    font-size: 1.1em; 
+    font-size: 1.1em;
     line-height: 1.2em;
-    padding: 5px; 
+    padding: 5px;
 }
 
 textarea {
@@ -99,7 +109,7 @@ textarea {
     padding: 5px;
 }
 
-button {   
+button {
     margin-top: 20px;
     border-radius: 5px;
     height: 2.5em;
@@ -110,8 +120,7 @@ button {
 footer {
     height: 100px;
     width: 100%;
-
-
+    z-index: 3;
 }
 
 
@@ -121,18 +130,28 @@ footer {
     min-height: 100vh;
 }
 
-.light header{
+.light header {
     border-bottom: 15px double black;
 }
 
-.light #gradient-icon{
-    color: white;
-    background-image: linear-gradient(gold,chocolate);
+.light .divLeft {
+    border-color:black;
 }
 
-.light .divLeft{
-    border-right: 15px double black;
+.light #gradient-icon {
+    color: white;
+    background-image: linear-gradient(gold, chocolate);
 }
+
+.light #gradient-icon a {
+    color: white;
+
+}
+
+.light #gradient-icon a:hover {
+    text-shadow: 1px 1px 2px dimgray;
+}
+
 
 .light button {
     color: white;
@@ -141,25 +160,34 @@ footer {
 
 .light footer {
     border-top: 4px solid black;
+    background-color: ghostwhite;
 }
 
 /*DARK MODE*/
-.dark{
+.dark {
     background-color: var(--nightdark);
     min-height: 100vh;
 }
 
-.dark header{
+.dark header {
     border-bottom: 15px double var(--nightlight);
 }
 
-.dark #gradient-icon{
-    color:black;
+.dark #gradient-icon {
+    color: black;
     background-image: linear-gradient(midnightblue, violet);
 }
 
-.dark .divLeft{
-    border-right: 15px double var(--nightlight);
+.dark .divLeft {
+    border-color: var(--nightlight);
+}
+
+.dark #gradient-icon a {
+    color: black;
+}
+
+.dark #gradient-icon a:hover {
+    text-shadow: 1px 1px 2px violet;
 }
 
 .dark .divRight {
@@ -188,7 +216,31 @@ footer {
     border-top: 4px solid var(--nightlight);
 }
 
-
-header span:hover{
+/*RESPONSIVE DESIGN*/
+header span:hover {
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .divLeft {
+        width: 100%;
+        border-right: 0;
+    }
+
+    #gradient-icon {
+        width: 70vw;
+        height: 70vw;
+    }
+
+    .divRight {
+        width: 100%;
+    }
+
+    .form {
+        margin-top: 20px;
+    }
 }
