@@ -37,8 +37,6 @@ main {
 .divLeft {
     width: 50%;
     float: left;
-    display: flex;
-    justify-content: center;
     border-right: 15px double;
     transition: width 1s ease-in-out;
 }
@@ -47,7 +45,7 @@ main {
     width: 27vw;
     height: 27vw;
     border-radius: 50%;
-    margin-top: 125px;
+    margin: 125px auto;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -133,10 +131,6 @@ footer {
     border-bottom: 15px double black;
 }
 
-.light header #theme-switcher {
-    content: '☀️';
-}
-
 .light .divLeft {
     border-color: black;
 }
@@ -148,13 +142,11 @@ footer {
 
 .light #gradient-icon a {
     color: white;
-
 }
 
 .light #gradient-icon a:hover {
     text-shadow: 1px 1px 2px dimgray;
 }
-
 
 .light button {
     background-color: black;
@@ -181,10 +173,6 @@ footer {
 
 .dark header {
     border-bottom: 15px double var(--nightmedium);
-}
-
-.dark header #theme-switcher {
-    content: '🌗';
 }
 
 .dark #gradient-icon {
@@ -242,6 +230,7 @@ footer {
 /*RESPONSIVE DESIGN*/
 header span:hover {
     cursor: pointer;
+    text-shadow: 1px 1px 15px gold;
 }
 
 @media screen and (max-width: 768px) {

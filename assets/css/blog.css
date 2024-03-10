@@ -120,10 +120,6 @@ footer ul li a span {
     border-bottom: 15px double black;
 }
 
-.light header #theme-switcher {
-    content: '☀️';
-}
-
 .light header button {
     color: white;
     background-color: black;
@@ -161,10 +157,6 @@ footer ul li a span {
 
 .dark header {
     border-bottom: 15px double var(--nightmedium);
-}
-
-.dark header #theme-switcher {
-    content: '🌗';
 }
 
 .dark header h2 {

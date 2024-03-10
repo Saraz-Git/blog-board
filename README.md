@@ -42,6 +42,6 @@ my-blog
 
 ## Deploy
 
-* The URL of the functional, deployed application.
+* The URL of the deployed application: https://saraz-git.github.io/blog-board/
 
-* The URL of the GitHub repository, with a unique name and a readme describing the project.
+* The URL of the GitHub repository: https://github.com/Saraz-Git/blog-board
