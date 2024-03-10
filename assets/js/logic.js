@@ -3,7 +3,7 @@ const themeSwitcher = document.querySelector('#theme-switcher');
 const container = document.querySelector('.container');
 
 // Set default mode to dark
-let mode = 'light';
+let mode = 'dark';
 
 // Listen for a click event on toggle element
 themeSwitcher.addEventListener('click', function () {
@@ -24,9 +24,6 @@ themeSwitcher.addEventListener('click', function () {
     container.setAttribute('class', 'dark');
   }
 });
-
-
-
 
 //Render last saved mode option
 function renderLastMode(){
