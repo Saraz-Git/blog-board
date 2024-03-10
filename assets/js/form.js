@@ -1,26 +1,23 @@
 const nameInput = document.querySelector('#username');
 const titleInput = document.querySelector('#title');
 const contentInput = document.querySelector('#content');
-const submitBtn =document.querySelector('#submit');
+const submitBtn = document.querySelector('#submit');
 
-let blogs =[];
- if(localStorage.getItem('blogs') !== null){
-    blogs =JSON.parse(localStorage.getItem('blogs'));
+//Retrive stored 'blogs' 
+let blogs = [];
+if (localStorage.getItem('blogs') !== null) {
+    blogs = JSON.parse(localStorage.getItem('blogs'));
     console.log(blogs);
- };
+};
 
-
-
-
-
-//ADD SUBMIT EVENT FOR FORM
-submitBtn.addEventListener('click',function(event){
+//Add event for submit button
+submitBtn.addEventListener('click', function (event) {
     event.preventDefault();
-    if(nameInput.value===''||titleInput.value===''||content.value.trim()===''){
+    if (nameInput.value === '' || titleInput.value === '' || content.value.trim() === '') {
         window.alert('Please complete the form');
         return;
-    }else{
-        let blog ={
+    } else {
+        let blog = {
             username: nameInput.value,
             title: titleInput.value,
             content: content.value.trim(),
@@ -28,8 +25,10 @@ submitBtn.addEventListener('click',function(event){
         console.log(blog);
         blogs.push(blog);
         console.log(blogs);
-        localStorage.setItem('blogs',JSON.stringify(blogs));
-    }; 
+        localStorage.setItem('blogs', JSON.stringify(blogs));
+        //Redirect to blog page when submit button is clicked
+        window.location.href = 'blog.html';
+    };
 });
 
 
