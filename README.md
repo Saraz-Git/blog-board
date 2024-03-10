@@ -8,18 +8,20 @@ The following animation demonstrates the application functionality:
 
 ## What I Have Done
 
-```md
-built the landing page containing a form with labels and inputs for username, title, and content.
-localStorage valid blog post data in a JSON array of blog post objects.
-built a blog posts page with a list of blog posts pulled from localStorage, each with title, content, and the author of the post.
-created hyperlink/url redirects between form page and blog page.
-provided light/dark mode toggle within header, and the style choice is saved in localStorage.
-included a link to the developer's portfolio in the footer.
-```
+* built the landing page containing a form with labels and inputs for username, title, and content.
 
-## Getting Started
+* localStorage valid blog post data in a JSON array of blog post objects.
 
-file structure as following:
+* built a blog posts page with a list of blog posts pulled from localStorage, each with title, content, and the author of the post.
+
+* created hyperlink/url redirects between form page and blog page.
+
+* provided light/dark mode toggle within header, and the style choice is saved in localStorage.
+
+* included a link to the developer's portfolio in the footer.
+
+
+## File Structure
 
 ```md
 my-blog
@@ -36,7 +38,6 @@ my-blog
 ├── blog.html
 └── README.md
 ```
-
 
 
 ## Deploy
